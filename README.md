@@ -109,7 +109,7 @@ For testing on Frontend Design, you need to first set up an VLLM server as the s
 ```bash
 python -m vllm.entrypoints.openai.api_server --model /path/to/Qwen2-VL-72B-Instruct --max-model-len 16384 --tensor-parallel-size 8 --gpu-memory-utilization=0.85 --max-num-seqs 16 --port 8000 --enforce-eager --limit-mm-per-prompt image=2 --trust-remote-code 
 ```
-Feel free to use Qwen2-VL-7B-Instruct as simulator for the human collaborator for reduced gpu memory, but the result may be different from provided in the paper.
+Feel free to use Llama-3.1-8B-Instruct as simulator for the human collaborator for reduced gpu memory, but the result may be different from provided in the paper.
 
 
 After setting up the VLLM server for human collaborator, you can now test your model for Frontend Design, run:
